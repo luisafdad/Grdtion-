@@ -1,3 +1,4 @@
+import React from "react";
 import NavbarOpen from "../navegacion/NavbarOpen";
 import LoginForm from "../forms/LoginForm";
 

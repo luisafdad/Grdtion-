@@ -8,6 +8,7 @@ import Register from './componentes/paginas/Register';
 
 import Login from './componentes/paginas/Login';
 import News from './componentes/paginas/News';
+import PredialConsul from './componentes/paginas/PredialConsul';
 
 //import NavbarOpen from './componentes/NavbarOpen';
 
@@ -22,6 +23,7 @@ function App() {
           <Route path= "/registro" element={ <Register/> } />
           <Route path= "/noticias" element={ <News/> } />
           <Route path= "/dashboard" element={ <Dashboard /> } />
+          <Route path= "/predios" element={ <PredialConsul /> } />
         </Routes>
       </Router>
 

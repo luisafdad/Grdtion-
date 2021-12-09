@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const NavbarOpen = () => {
+const NavbarExtUser = () => {
     return (
         
-        <div >
+        <div>
             {/*<!-- Creo Barra de Navegacion de Inicio -->*/}
             <nav className="navbar navbar-expand-lg navbar-light bg-light "> 
                 <div className="container-fluid">
@@ -18,28 +18,22 @@ const NavbarOpen = () => {
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item ">
                                 {/*<!-- <Link className="nav-link active" to='/'>Inicio</Link> -->*/}
-                                <Link className="nav-link " to='/'>Inicio</Link>
+                                <Link className="nav-link " to='/predios'>Predios</Link>
+                            </li>
+                            <li className="nav-item ">
+                                <Link className="nav-link " to='/pagos'>Pagos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to='/noticias'>Noticias</Link>
+                                <Link className="nav-link" to='/convenios'>Convenios</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to='/dashboard'>Dashboard</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to='/predios'>Predios</Link>
-                            </li>
-                            <li className="nav-item">
+                                                        <li className="nav-item">
                                 <a className="nav-link disabled">Contacto </a>
                             </li>
                         </ul>
                         <ul className=" nav justify-content-center">
-                            <li className="nav-item">
-                                <Link className="nav-link" to='/registro'>Registrate</Link>
-                            </li>
-
+                            
                             <li className="nav-item  nav-pills">
-                                <Link className="nav-link active" to='/login'>Login</Link>
+                                <Link className="nav-link active" to='/login'>LogOut</Link>
                             </li>  
                         </ul>                   
                     </div>
@@ -51,4 +45,4 @@ const NavbarOpen = () => {
     );
 };
 
-export default NavbarOpen;
+export default NavbarExtUser;
