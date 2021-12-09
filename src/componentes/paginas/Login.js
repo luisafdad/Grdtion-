@@ -1,4 +1,4 @@
-import NavbarOpen from "../NavbarOpen";
+import NavbarOpen from "../navegacion/NavbarOpen";
 import LoginForm from "../forms/LoginForm";
 
 

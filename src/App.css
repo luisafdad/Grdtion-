@@ -24,6 +24,23 @@
   color: white;
 }
 
+
+
+
+.App-inicio {
+  background-color: #282c34;
+  min-height: 90vh;
+
+}
+
+.App-inicio1 {
+  
+  min-height: 80vh;
+  
+  
+}
+
+
 .App-link {
   color: #61dafb;
 }
