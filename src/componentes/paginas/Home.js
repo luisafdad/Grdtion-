@@ -10,9 +10,7 @@ const Home = () =>{
        <div>
         
            <NavbarOpen/>
-        
            <HomeForm/>
-           
            
         </div>
 

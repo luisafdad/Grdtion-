@@ -29,7 +29,7 @@ const NavbarOpen = () => {
                         </ul>
                         <ul className=" nav justify-content-center">
                             <li className="nav-item">
-                                <Link className="nav-link" to='/Registro'>Registrate</Link>
+                                <Link className="nav-link" to='/registro'>Registrate</Link>
                             </li>
 
                             <li className="nav-item  nav-pills">
