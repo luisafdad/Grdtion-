@@ -2,9 +2,13 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './componentes/paginas/Dashboard';
+
 import Home from './componentes/paginas/Home';
+import Register from './componentes/paginas/Register';
 
 import Login from './componentes/paginas/Login';
+import News from './componentes/paginas/News';
+
 //import NavbarOpen from './componentes/NavbarOpen';
 
 function App() {
@@ -15,6 +19,8 @@ function App() {
         <Routes>
           <Route path= '/' exact element={<Home/>} />
           <Route path= "/login" element={ <Login /> } />
+          <Route path= "/registro" element={ <Register/> } />
+          <Route path= "/noticias" element={ <News/> } />
           <Route path= "/dashboard" element={ <Dashboard /> } />
         </Routes>
       </Router>
