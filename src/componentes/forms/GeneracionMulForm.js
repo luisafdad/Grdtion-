@@ -59,7 +59,7 @@ const GenMultaForm = () => {
                     <label for="file"><strong>Progreso</strong></label>
                     </div>
 
-                    <progress  max="100" value="50"> 50% </progress>
+                    <progress  max="100" value="70"> 70% </progress>
                     </div>
 
                     <br></br>
