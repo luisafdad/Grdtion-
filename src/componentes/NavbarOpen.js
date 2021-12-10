@@ -19,16 +19,16 @@ const NavbarOpen = () => {
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
+                                <a class="nav-link" href="../index.html"><strong>Inicio</strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./news.html#news">Noticias</a>
+                                <a class="nav-link" href="./news.html#news"><strong>Noticias</strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./news.html#projects">Proyectos</a>
+                                <a class="nav-link" href="./news.html#projects"><strong>Proyectos</strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../index.html#contact">Contacto</a>
+                                <a class="nav-link" href="../index.html#contact"><strong>Contacto</strong></a>
                             </li>
                             <li class="nav-item">
                                 <a
