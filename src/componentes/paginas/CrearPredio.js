@@ -1,8 +1,8 @@
 import NavbarOpen from "../NavbarOpen";
-import LoginForm from "../forms/LoginForm";
+import CrearPredForm from "../forms/CrearPredForm";
 
 
-const Login = () => {
+const CrearPredio = () => {
 
     return (
         <>
@@ -17,7 +17,7 @@ const Login = () => {
                                         <div class="col-lg-3"></div>
                                         <div class="col-lg-6">
                                             <div class="p-5">
-                                                <LoginForm />
+                                                <CrearPredForm />
                                             </div>
                                         </div>
                                     </div>
@@ -31,4 +31,4 @@ const Login = () => {
     );
 }
 
-export default Login;
+export default CrearPredio;

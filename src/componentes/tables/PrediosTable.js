@@ -18,7 +18,7 @@ const PrediosTable = (predios) => {
                 </tr>
             ));
   
-    /*
+/*
     console.log(predios.predios);
     const listPredios = () => (
             <tr>
@@ -29,7 +29,7 @@ const PrediosTable = (predios) => {
 
     return (
         <table
-            className="table table-bordered"
+            class="table table-bordered"
             id="dataTable"
             width="100%"
             cellspacing="0"

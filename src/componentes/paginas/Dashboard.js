@@ -1,4 +1,4 @@
-import NavbarOpen from "../navegacion/NavbarOpen";
+import NavbarOpen from "../NavbarOpen";
 import { useState, useEffect } from "react";
 import PrediosTable from "../tables/PrediosTable"
 

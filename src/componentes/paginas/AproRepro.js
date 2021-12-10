@@ -1,8 +1,8 @@
 import NavbarOpen from "../NavbarOpen";
-import LoginForm from "../forms/LoginForm";
+import AproReproForm from "../forms/AproReproForm";
 
 
-const Login = () => {
+const AproRepro = () => {
 
     return (
         <>
@@ -17,7 +17,7 @@ const Login = () => {
                                         <div class="col-lg-3"></div>
                                         <div class="col-lg-6">
                                             <div class="p-5">
-                                                <LoginForm />
+                                                <AproReproForm />
                                             </div>
                                         </div>
                                     </div>
@@ -31,4 +31,4 @@ const Login = () => {
     );
 }
 
-export default Login;
+export default AproRepro;
