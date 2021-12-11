@@ -1,4 +1,4 @@
-import NavbarOpen from "../NavbarOpen";
+import NavbarOpen from "../navegacion/NavbarOpen";
 import { useState, useEffect } from "react";
 import PrediosTable from "../tables/PrediosTable"
 
@@ -36,5 +36,6 @@ const Dashboard = () => {
         </>
     );
 };
+
 
 export default Dashboard;

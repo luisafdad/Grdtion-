@@ -24,6 +24,24 @@
   color: white;
 }
 
+
+/*Creo estas dos clases para usarlas en el carrusel del Home (inicio)*/
+
+.App-inicio {
+  background-color: #282c34;
+  min-height: 90vh;
+
+}
+
+.App-inicio1 {
+
+  min-height: 80vh;
+
+  
+}
+
+/*---------------------------)*/
+
 .App-link {
   color: #61dafb;
 }
@@ -36,5 +54,3 @@
     transform: rotate(360deg);
   }
 }
-
-

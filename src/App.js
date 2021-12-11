@@ -1,28 +1,34 @@
+
+import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './componentes/paginas/Dashboard';
 
+import Home from './componentes/paginas/Home';
+import Register from './componentes/paginas/Register';
+
 import Login from './componentes/paginas/Login';
-import CrearPredio from './componentes/paginas/CrearPredio';
-import GenerarMulta from './componentes/paginas/GenerarMulta';
-import AproRepro from './componentes/paginas/AproRepro';
-import PagoPredial from './componentes/paginas/PagoPredial';
+import News from './componentes/paginas/News';
+import PredialConsul from './componentes/paginas/PredialConsul';
+
+//import NavbarOpen from './componentes/NavbarOpen';
 
 function App() {
 
   return (
-    <Router>
-      <Routes>
-        <Route path= "/login" element={ <Login /> } />
-        <Route path= "/dashboard" element={ <Dashboard /> } />
-        <Route path= "/crearpredio" element={ <CrearPredio /> } />
-        <Route path= "/generarmulta" element={ <GenerarMulta /> } />
-        <Route path= "/aprobareprobar" element={ <AproRepro /> } />
-        <Route path= "/pagopredial" element={ <PagoPredial /> } />  
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path= '/' exact element={<Home/>} />
+          <Route path= "/login" element={ <Login /> } />
+          <Route path= "/registro" element={ <Register/> } />
+          <Route path= "/noticias" element={ <News/> } />
+          <Route path= "/dashboard" element={ <Dashboard /> } />
+          <Route path= "/predios" element={ <PredialConsul /> } />
+        </Routes>
+      </Router>
 
-        PagoPredial
+    </div>
 
-      </Routes>
-    </Router>
   );
 }
 
