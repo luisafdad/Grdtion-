@@ -31,8 +31,7 @@ const GenMultaForm = () => {
         <>
 
             <div class="text-center">
-                <h1 class="h4 text-gray-900 mb-4"><strong>Generación de Multa</strong></h1>
-                <br></br>
+                <h1 class="h4 text-gray-900 mb-4">Generación de Multa</h1>
             </div>
             <form class="user">
                     <div class="form-group row">
@@ -53,16 +52,14 @@ const GenMultaForm = () => {
                         />
                       </div>
                     </div>
-                    <br></br>
-                    <div class="text-center">
                     <div>
-                    <label for="file"><strong>Progreso</strong></label>
+                    <label for="file">Progreso:</label>
                     </div>
 
-                    <progress  max="100" value="50"> 50% </progress>
-                    </div>
+<progress id="file" max="100" value="70"> 70% </progress>
 
-                    <br></br>
+
+
 
                     <a
                       href="./index.html"
