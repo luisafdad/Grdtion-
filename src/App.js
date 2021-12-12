@@ -8,7 +8,7 @@ import Home from './componentes/paginas/Home';
 import Register from './componentes/paginas/Register';
 
 import Login from './componentes/paginas/Login';
-import SolicitudComvenioPago from './componentes/paginas/SolicitudComvenioPago';
+import SolicitudConvenioPago from './componentes/paginas/SolicitudConvenioPago';
 import News from './componentes/paginas/News';
 import PredialConsul from './componentes/paginas/PredialConsul';
 
@@ -27,7 +27,7 @@ function App() {
           <Route path= "/dashboard" element={ <Dashboard /> } />
           <Route path= "/predios" element={ <PredialConsul /> } />
           <Route path= "/cobropredios" element={ <CobroDePredial /> } />
-          <Route path= "/solicitudcomveniopago" element={ <SolicitudComvenioPago /> } />
+          <Route path= "/solicitudconveniopago" element={ <SolicitudConvenioPago /> } />
         </Routes>
       </Router>
 

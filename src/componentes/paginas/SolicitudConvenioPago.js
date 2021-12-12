@@ -1,16 +1,16 @@
-import NavbarOpen from "../NavbarOpen";
+import NavbarExtUser from "../navegacion/NavbarExtUser";
 import {Fragment} from "react";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Form'
 
-const SolicitudComvenioPago = () => {
+const SolicitudConvenioPago = () => {
 
   
   
 
     return (
         <Fragment>
-            <NavbarOpen />
+            <NavbarExtUser />
             <section>
     <div className="container">
         <div className="row">
@@ -120,4 +120,4 @@ const SolicitudComvenioPago = () => {
     );
 };
 
-export default SolicitudComvenioPago;
+export default SolicitudConvenioPago;

@@ -1,4 +1,4 @@
-import NavbarOpen from "../NavbarOpen";
+import NavbarOpen from "../navegacion/NavbarOpen";
 import {Fragment} from "react";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Form'
