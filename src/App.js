@@ -2,13 +2,13 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './componentes/paginas/Dashboard';
-import CobroDePredial from './componentes/predios/CobroDePredial';
+import CobroDePredial from './componentes/paginas/CobroDePredial';
 
 import Home from './componentes/paginas/Home';
 import Register from './componentes/paginas/Register';
 
 import Login from './componentes/paginas/Login';
-import SolicitudComvenioPago from './componentes/predios/SolicitudComvenioPago';
+import SolicitudComvenioPago from './componentes/paginas/SolicitudComvenioPago';
 import News from './componentes/paginas/News';
 import PredialConsul from './componentes/paginas/PredialConsul';
 
