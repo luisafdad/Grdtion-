@@ -3,10 +3,7 @@ import {Fragment} from "react";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Form'
 
-const PagoPredios = () => {
-
-  
-  
+const CobroDePredial = () => {
 
     return (
         <Fragment>
@@ -81,4 +78,4 @@ const PagoPredios = () => {
     );
 };
 
-export default PagoPredios;
+export default CobroDePredial;
