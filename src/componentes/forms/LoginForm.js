@@ -1,7 +1,19 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 const LoginForm = () => {
+    
+    const [ usuariosApi, setUsuariosApi] = useState([]);
+
+    const consultarUsuario = useEffect((loginForm) => {
+
+        if (loginForm) {
+            fetch('http://localhost:3004/usuarios?username='+loginForm.email)
+            .then(response => response.json())
+            .then(data => setUsuariosApi(data));
+        }
+
+    }, []);
 
     const loginFormClean = {
         email: "",
@@ -22,6 +34,14 @@ const LoginForm = () => {
 
         //Aqui podemos implementar validaciones a nivel de formulario.
         console.log(loginForm);
+
+        consultarUsuario(loginForm);
+        
+
+        if (usuariosApi.length > 0) {
+            console.log("Se encontro al usuario");
+        }
+
     }
 
     const [loginForm, setLoginForm] = useState(loginFormClean);
