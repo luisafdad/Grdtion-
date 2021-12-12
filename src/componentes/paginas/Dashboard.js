@@ -24,12 +24,14 @@ const Dashboard = () => {
                             <h6 class="m-0 font-weight-bold text-primary">
                                 Predios
                             </h6>
+                            
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <PrediosTable predios={prediosApi} />
                             </div>
-                        </div>
+                         </div>
+                           
                     </div>
                 </div>
             </section>

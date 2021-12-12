@@ -2,11 +2,13 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './componentes/paginas/Dashboard';
+import CobroDePredial from './componentes/paginas/CobroDePredial';
 
 import Home from './componentes/paginas/Home';
 import Register from './componentes/paginas/Register';
 
 import Login from './componentes/paginas/Login';
+import SolicitudConvenioPago from './componentes/paginas/SolicitudConvenioPago';
 import News from './componentes/paginas/News';
 import PredialConsul from './componentes/paginas/PredialConsul';
 
@@ -24,6 +26,8 @@ function App() {
           <Route path= "/noticias" element={ <News/> } />
           <Route path= "/dashboard" element={ <Dashboard /> } />
           <Route path= "/predios" element={ <PredialConsul /> } />
+          <Route path= "/cobropredios" element={ <CobroDePredial /> } />
+          <Route path= "/solicitudconveniopago" element={ <SolicitudConvenioPago /> } />
         </Routes>
       </Router>
 
