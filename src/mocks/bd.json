@@ -1,0 +1,81 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "username": "leo",
+            "password": "1234",
+            "rol": "Administrador"
+        },
+        {
+            "id": 2,
+            "username": "luisa",
+            "password": "1234",
+            "rol": "Interno"
+        },
+        {
+            "id": 3,
+            "username": "pedro",
+            "password": "1234",
+            "rol": "Externo"
+        },
+        {
+            "id": 4,
+            "username": "lorena",
+            "password": "1234",
+            "rol": "Administrador"
+        }
+    ],
+    "predios": [
+        {
+            "codigo": "654",
+            "cedula": "9687324",
+            "nombre": "Adan",
+            "atotal": 65,
+            "aconstruida": 50,
+            "direccion": "Calle 50 #8-56",
+            "barrio": "Bosa"
+        }
+    ],
+    "pagos": [
+        {
+            "id": 1,
+            "tipo": "Impuesto",
+            "codigo_predio": "653",
+            "valor_pagar": 5654654,
+            "estado": "pendiente",
+            "fecha_creacion": "12/12/2021",
+            "fecha_pago": "",
+            "titular": "Pedro Ramirez"
+        },
+        {
+            "id": 2,
+            "tipo": "Multa",
+            "codigo_predio": "543",
+            "valor_pagar": 5654654,
+            "estado": "pagado",
+            "fecha_creacion": "12/12/2021",
+            "fecha_pago": "",
+            "titular": "Pedro Ramirez"
+        },
+        {
+            "id": 3,
+            "tipo": "Impuesto",
+            "codigo_predio": "653",
+            "valor_pagar": 5654654,
+            "estado": "Anulado",
+            "fecha_creacion": "12/12/2021",
+            "fecha_pago": "",
+            "titular": "Pedro Ramirez"
+        }
+    ],
+    "convenios": [
+        {
+            "id":1,
+            "codigo_predio": "43422",
+            "codigo_pago": 123,
+            "estado": "pendiente",
+            "cuotas": 4
+            
+        }
+    ]
+}
