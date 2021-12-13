@@ -31,13 +31,16 @@ const NavbarExtUser = () => {
                             <li className="nav-item ">
                                 <Link className="nav-link " to='/noticias'>Noticias</Link>
                             </li>
-                                                        <li className="nav-item">
+                            <li className="nav-item ">
+                                <Link className="nav-link " to='/pagopredial'>Pago Predial</Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link className="nav-link" to='/convenios'>Convenios</Link>
                             </li>
-                                                        <li className="nav-item">
+                            <li className="nav-item">
                                 <Link className="nav-link" to='/dashboard'>Dashboard</Link>
                             </li>
-                                                        <li className="nav-item">
+                            <li className="nav-item">
                                 <a className="nav-link disabled">Contacto </a>
                             </li>
                         </ul>

@@ -11,6 +11,10 @@ import Login from './componentes/paginas/Login';
 import SolicitudConvenioPago from './componentes/paginas/SolicitudConvenioPago';
 import News from './componentes/paginas/News';
 import PredialConsul from './componentes/paginas/PredialConsul';
+import PagoPredial from './componentes/paginas/PagoPredial';
+import CrearPredio from './componentes/paginas/CrearPredio';
+import AproRepro from './componentes/paginas/AproRepro';
+import GenerarMulta from './componentes/paginas/GenerarMulta';
 
 //import NavbarOpen from './componentes/NavbarOpen';
 
@@ -26,6 +30,10 @@ function App() {
           <Route path= "/noticias" element={ <News/> } />
           <Route path= "/dashboard" element={ <Dashboard /> } />
           <Route path= "/predios" element={ <PredialConsul /> } />
+          <Route path= "/pagopredial" element={ <PagoPredial /> } />
+          <Route path= "/crearpredio" element={ <CrearPredio/> } />
+          <Route path= "/aprorepro" element={ <AproRepro /> } />
+          <Route path= "/generarmulta" element={ <GenerarMulta /> } />
           <Route path= "/cobropredios" element={ <CobroDePredial /> } />
           <Route path= "/solicitudconveniopago" element={ <SolicitudConvenioPago /> } />
         </Routes>
