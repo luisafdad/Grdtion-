@@ -16,20 +16,28 @@ const NavbarOpen = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav mx-auto">
+                        <li className="nav-item ">
+                                {/*<!-- <Link className="nav-link active" to='/'>Inicio</Link> -->*/}
+                                <Link className="nav-link " to='/'>Home</Link>
+                            </li>
                             <li className="nav-item ">
                                 {/*<!-- <Link className="nav-link active" to='/'>Inicio</Link> -->*/}
-                                <Link className="nav-link " to='/'>Inicio</Link>
+                                <Link className="nav-link " to='/cobropredios'>Cobro Predios</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to='/noticias'>Noticias</Link>
+                            <li className="nav-item ">
+                                {/*<!-- <Link className="nav-link active" to='/'>Inicio</Link> -->*/}
+                                <Link className="nav-link " to='/solicitudconveniopago'>Solicitud Convenio Pago</Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item ">
+                                <Link className="nav-link " to='/noticias'>Noticias</Link>
+                            </li>
+                                                        <li className="nav-item">
+                                <Link className="nav-link" to='/convenios'>Convenios</Link>
+                            </li>
+                                                        <li className="nav-item">
                                 <Link className="nav-link" to='/dashboard'>Dashboard</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to='/predios'>Predios</Link>
-                            </li>
-                            <li className="nav-item">
+                                                        <li className="nav-item">
                                 <a className="nav-link disabled">Contacto </a>
                             </li>
                         </ul>
