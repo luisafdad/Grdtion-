@@ -21,7 +21,7 @@ const NavbarExtUser = () => {
                                 <Link className="nav-link " to='/predios'>Predios</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link className="nav-link " to='/pagos'>Pagos</Link>
+                                <Link className="nav-link " to='/pagopredial'>Pago Predial</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to='/convenios'>Convenios</Link>
