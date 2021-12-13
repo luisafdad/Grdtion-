@@ -31,11 +31,11 @@ const CobrodePredialForm = () => {
                 <h2 className="main-form-text"><span>Cobro de Predio</span></h2>
 
             </div>
-            <form classname="form-horizontal">
+            <form classname="user">
                 <div className="mt-3">
                     <label column sm="2">Fecha de Pago Maximo</label>
                     <input column sm="10"
-                        className="form-control"
+                        className="form-control form-control-user"
                         id="name"
                         name="name"
 
@@ -46,7 +46,7 @@ const CobrodePredialForm = () => {
                 <div className="mt-3">
                     <label column sm="2">Fecha Maxima de Descuento</label>
                     <input column sm="10"
-                        className="form-control"
+                        className="form-control form-control-user"
                         id="name"
                         name="name"
 
@@ -58,7 +58,7 @@ const CobrodePredialForm = () => {
                 <div className="mt-3">
                     <label column sm="2">Descuento Aplicable</label>
                     <input column sm="10"
-                        className="form-control"
+                        className="form-control form-control-user"
                         id="name"
                         name="name"
 
