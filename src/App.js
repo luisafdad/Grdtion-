@@ -1,5 +1,6 @@
 
 import './App.css';
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './componentes/paginas/Dashboard';
 import CobroDePredial from './componentes/paginas/CobroDePredial';
@@ -19,7 +20,19 @@ import GenerarMulta from './componentes/paginas/GenerarMulta';
 //import NavbarOpen from './componentes/NavbarOpen';
 
 function App() {
+  const [token, setToken] = useState();
 
+  if (!token) {
+    return (
+      <Router>
+        <Routes>
+        <Route path= '/' exact element={<Home/>} />
+          <Route path= "/login" element={ <Login setToken={setToken}/> } />
+          <Route path= "/registro" element={ <Register/> } />
+        </Routes>
+      </Router>
+    );
+  }
   return (
     <div className="App">
       <Router>

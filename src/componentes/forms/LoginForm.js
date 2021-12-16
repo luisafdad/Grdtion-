@@ -1,20 +1,20 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+
+async function loginUser(credentials) {
+    return fetch('http://localhost:3001/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(credentials)
+    })
+      .then(data => data.json())
+   }
 
 
-const LoginForm = () => {
+const LoginForm = ({ setToken }) => {
     
-    const [ usuariosApi, setUsuariosApi] = useState([]);
-
-    const consultarUsuario = useEffect((loginForm) => {
-
-        if (loginForm) {
-            fetch('http://localhost:3004/usuarios?username='+loginForm.email)
-            .then(response => response.json())
-            .then(data => setUsuariosApi(data));
-        }
-
-    }, []);
-
     const loginFormClean = {
         email: "",
         password: ""
@@ -29,18 +29,13 @@ const LoginForm = () => {
         setLoginForm(p);
     }
 
-    const onFormSubmit = function (evt) {
+    const onFormSubmit = async (evt)=> {
         evt.preventDefault();
+        const token = await loginUser(loginForm);
+          setToken(token);
 
         //Aqui podemos implementar validaciones a nivel de formulario.
         console.log(loginForm);
-
-        consultarUsuario(loginForm);
-        
-
-        if (usuariosApi.length > 0) {
-            console.log("Se encontro al usuario");
-        }
 
     }
 
@@ -90,3 +85,6 @@ const LoginForm = () => {
 }
 
 export default LoginForm;
+LoginForm.propTypes = {
+    setToken: PropTypes.func.isRequired
+  }

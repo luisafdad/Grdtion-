@@ -1,9 +1,10 @@
 import React from "react";
 import NavbarOpen from "../navegacion/NavbarOpen";
 import LoginForm from "../forms/LoginForm";
+import PropTypes from 'prop-types';
 
 
-const Login = () => {
+const Login = ({ setToken }) => {
 
     return (
         <>
@@ -18,7 +19,7 @@ const Login = () => {
                                         <div class="col-lg-3"></div>
                                         <div class="col-lg-6">
                                             <div class="p-5">
-                                                <LoginForm />
+                                                <LoginForm setToken={setToken}/>
                                             </div>
                                         </div>
                                     </div>
