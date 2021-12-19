@@ -1,11 +1,11 @@
-import Navbar_InterUser from "../navegacion/Navbar_InterUser";
+import Navbar from "../navegacion/Navbar";
 import CrearPredForm from "../forms/CrearPredForm";
 
-const CrearPredio = ({onAdd}) => {
+const CrearPredio = ({onAdd, role}) => {
 
     return (
         <>
-            <Navbar_InterUser />
+            <Navbar role = { role } />
             <section className="page-section bg-white">
                 <div className="container">
                     <div className="row justify-content-center">

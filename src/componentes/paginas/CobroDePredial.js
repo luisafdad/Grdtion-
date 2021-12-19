@@ -1,10 +1,10 @@
-import Navbar_InterUser from "../navegacion/Navbar_InterUser";
+import Navbar from "../navegacion/Navbar";
 import CobrodePredialForm from "../forms/CobrodePredialForm";
 
-const CobroDePredial = () => {
+const CobroDePredial = ({ role }) => {
     return (
         <>
-        <Navbar_InterUser />
+        <Navbar role = { role } />
         <section class="page-section App-inicio">
             <div class="container">
                 <div class="row justify-content-center">

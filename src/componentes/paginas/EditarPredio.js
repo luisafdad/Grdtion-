@@ -1,11 +1,12 @@
-import NavbarOpen from "../navegacion/NavbarOpen";
+import Navbar from "../navegacion/Navbar";
 import EditarPredial from "../forms/EditarPredial";
 
 const EditarPredio = (props) => {
     const onUpdate = props.onUpdate;
+    const role = props.role;
     return (
         <>
-            <NavbarOpen />
+            <Navbar role = { role } />
             <section className="page-section bg-white">
                 <div className="container">
                     <div className="row justify-content-center">

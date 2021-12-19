@@ -1,12 +1,12 @@
-import Navbar_InterUser from "../navegacion/Navbar_InterUser";
+import Navbar from "../navegacion/Navbar";
 import GeneracionMulForm from "../forms/GeneracionMulForm";
 
 
-const GenerarMulta = () => {
+const GenerarMulta = ({ role }) => {
 
     return (
         <>
-            <Navbar_InterUser />
+            <Navbar role = { role } />
             <section class="page-section App-inicio">
                 <div class="container">
                     <div class="row justify-content-center">

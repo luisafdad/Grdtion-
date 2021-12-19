@@ -1,10 +1,10 @@
-import NavbarExtUser from "../navegacion/NavbarExtUser";
+import Navbar from "../navegacion/Navbar";
 import SolicitudConvenioPagoForm from "../forms/SolicitudConvenioPagoForm";
 
-const SolicitudConvenioPago = () => {
+const SolicitudConvenioPago = ({ role }) => {
     return (
         <>
-        <NavbarExtUser />
+        <Navbar role = { role } />
         <section class="page-section App-inicio">
             <div class="container">
                 <div class="row justify-content-center">

@@ -35,6 +35,7 @@ const LoginForm = ({ setToken }) => {
 
         if (response.message) {
             setToken(null);
+            alert("Datos inválidos");
             console.log("no se logueo");
             return (<></>);
         }
@@ -82,7 +83,7 @@ const LoginForm = ({ setToken }) => {
                 <a class="small" href="/forgot-password">¿Olvidaste tu contraseña?</a>
             </div>
             <div class="text-center">
-                <a class="small" href="/register">Registrarte</a>
+                <a class="small" href="/registro">Regístrate</a>
             </div>
         </>
     );

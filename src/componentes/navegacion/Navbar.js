@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LoginSection from "./LoginSection";
+import SectionExternalUsers from "./SectionsExternalUsers";
 
 const Navbar = ({ role }) => {
     return (
@@ -16,9 +17,11 @@ const Navbar = ({ role }) => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        
-                        
-                        <LoginSection role={ role }/>
+                        <ul className="navbar-nav mx-auto">
+                            <SectionExternalUsers />
+                        </ul>
+                        <LoginSection role={role} />
+
                     </div>
                 </div>
             </nav>

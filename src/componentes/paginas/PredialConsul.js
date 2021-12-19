@@ -1,13 +1,13 @@
 import React from "react";
-import Navbar_InterUser from "../navegacion/Navbar_InterUser";
+import Navbar from "../navegacion/Navbar";
 
 import PrediosTable from "../tables/PrediosTable";
 
-const PredialConsul = (props) => {
+const PredialConsul = ({ onDelete, predios, role }) => {
 
     return (
         <div >
-            <Navbar_InterUser />
+            <Navbar role = { role } />
             <section className="page-section bg-white">
                 <div className="container">
                     <div className="card shadow mb-4">
@@ -18,8 +18,8 @@ const PredialConsul = (props) => {
                         </div>
                         <div className="card-body">
                             <div className="table-responsive">
-                                <PrediosTable onDelete={props.onDelete}
-                                    predios={props.predios} />
+                                <PrediosTable onDelete={ onDelete }
+                                    predios={ predios } />
                             </div>
                         </div>
                     </div>
