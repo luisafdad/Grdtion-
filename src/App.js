@@ -1,6 +1,5 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import './App.css';
-import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './componentes/paginas/Dashboard';
 import CobroDePredial from './componentes/paginas/CobroDePredial';
@@ -16,33 +15,29 @@ import AproRepro from './componentes/paginas/AproRepro';
 import GenerarMulta from './componentes/paginas/GenerarMulta';
 import EditarPredio from "./componentes/paginas/EditarPredio";
 import PrediosTable from './componentes/tables/PrediosTable';
+import Logout from './componentes/paginas/Logout';
+
+
+function setToken(userToken) {
+  sessionStorage.setItem('token', JSON.stringify(userToken));
+}
+
+function getToken() {
+  const tokenString = sessionStorage.getItem('token');
+  return JSON.parse(tokenString);
+}
 
 const App = () => {
   const [predios, setPredios] = useState([]);
   
-  const [token, setToken] = useState();
-
-  if (!token) {
-    return (
-      <Router>
-        <Routes>
-        <Route path= '/' exact element={<Home/>} />
-          <Route path= "/login" element={ <Login setToken={setToken}/> } />
-          <Route path= "/registro" element={ <Register/> } />
-        </Routes>
-      </Router>
-    );
-  }
-
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const token = getToken();
 
   const fetchData = async () => {
     await fetch("http://localhost:3001/predios")
       .then((res) => res.json())
       .then((data) => setPredios(data))
       .catch((err) => {
+        setPredios([]);
         console.log(err);
       });
   };
@@ -117,8 +112,9 @@ const App = () => {
     <div className="App">     
     <Router>
       <Routes>
-        <Route path= '/' exact element={<Home/>} />
-        <Route path= "/login" element={ <Login /> } />
+        <Route path= '/' exact element={<Home token={token}/>} />
+        <Route path= "/login" element={ <Login setToken={setToken} token={ token }/> } />
+        <Route path= "/logout" element={ <Logout setToken={setToken} token={ token }/> } />
         <Route path= "/registro" element={ <Register/> } />
         <Route path= "/noticias" element={ <News/> } />
         <Route path= "/dashboard" element={ <Dashboard onUpdate={onUpdate} predios={predios} onDelete={onDelete} /> } />

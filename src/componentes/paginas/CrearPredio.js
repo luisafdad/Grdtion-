@@ -5,7 +5,7 @@ const CrearPredio = ({onAdd}) => {
 
     return (
         <>
-            <NavbarOpen />
+            <Navbar_InterUser />
             <section className="page-section bg-white">
                 <div className="container">
                     <div className="row justify-content-center">

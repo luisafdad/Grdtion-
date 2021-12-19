@@ -2,19 +2,19 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 async function loginUser(credentials) {
-    return fetch('http://localhost:3001/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(credentials)
+    return fetch('http://localhost:3001/users/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(credentials)
     })
-      .then(data => data.json())
-   }
+        .then(data => data.json())
+}
 
 
 const LoginForm = ({ setToken }) => {
-    
+
     const loginFormClean = {
         email: "",
         password: ""
@@ -29,14 +29,18 @@ const LoginForm = ({ setToken }) => {
         setLoginForm(p);
     }
 
-    const onFormSubmit = async (evt)=> {
+    const onFormSubmit = async (evt) => {
         evt.preventDefault();
-        const token = await loginUser(loginForm);
-          setToken(token);
+        const response = await loginUser(loginForm);
 
-        //Aqui podemos implementar validaciones a nivel de formulario.
-        console.log(loginForm);
+        if (response.message) {
+            setToken(null);
+            console.log("no se logueo");
+            return (<></>);
+        }
 
+        setToken(response);
+        window.location.href = '/';
     }
 
     const [loginForm, setLoginForm] = useState(loginFormClean);
@@ -75,10 +79,10 @@ const LoginForm = ({ setToken }) => {
             </form>
             <hr />
             <div class="text-center">
-                <a class="small" href="forgot-password.html">¿Olvidaste tu contraseña?</a>
+                <a class="small" href="/forgot-password">¿Olvidaste tu contraseña?</a>
             </div>
             <div class="text-center">
-                <a class="small" href="./register.html">Registrarte</a>
+                <a class="small" href="/register">Registrarte</a>
             </div>
         </>
     );
@@ -87,4 +91,4 @@ const LoginForm = ({ setToken }) => {
 export default LoginForm;
 LoginForm.propTypes = {
     setToken: PropTypes.func.isRequired
-  }
+}

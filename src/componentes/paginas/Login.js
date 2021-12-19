@@ -1,15 +1,14 @@
 import React from "react";
-import NavbarOpen from "../navegacion/NavbarOpen";
+import Navbar from "../navegacion/Navbar";
 import LoginForm from "../forms/LoginForm";
-import PropTypes from 'prop-types';
 
 
-const Login = ({ setToken }) => {
+const Login = ({ setToken, token }) => {
 
+    console.log("token en login", token  ? token : '');
     return (
         <>
- 
-            <NavbarOpen />
+            <Navbar role = { token  ? token.role : '' } />
             <section class="page-section App-inicio ">
                 <div class="container">
                     <div class="row justify-content-center">
