@@ -1,4 +1,4 @@
-import NavbarExtUser from "../navegacion/NavbarExtUser";
+import Navbar from "../navegacion/Navbar";
 import { useState, useEffect } from "react";
 import PrediosTable from "../tables/PrediosTable"
 
@@ -8,6 +8,7 @@ const Dashboard = (props) => {
     const onDelete = props.onDelete;
     const onUpdate = props.onUpdate;
     const predios = props.predios;
+    const role = props.role;
 
     // useEffect(() => {
     //     fetch('http://localhost:3001/predios')
@@ -18,7 +19,7 @@ const Dashboard = (props) => {
 
     return (
         <>
-            <NavbarExtUser />
+            <Navbar role = { role } />
             <section class="page-section bg-white">
                 <div class="container">
 

@@ -1,12 +1,12 @@
 import React from "react";
-import NavbarOpen from "../navegacion/NavbarOpen";
+import Navbar from "../navegacion/Navbar";
 import RegisterForm from "../forms/RegisterForm";
 
-const Register = () =>{
+const Register = ({ role }) =>{
 
     return(
         <div className='App-inicio'>
-            <NavbarOpen/>
+            <Navbar role = { role } />
             <div className="container ">
                 <div className="row justify-content-sm-center">
                     <div className="col-xl-7 col-lg-8 col-md-9">

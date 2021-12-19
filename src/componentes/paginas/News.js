@@ -1,12 +1,12 @@
 import React from "react";
-import NavbarOpen from "../navegacion/NavbarOpen";
+import Navbar from "../navegacion/Navbar";
 
-const News = () =>{
+const News = ( {role} ) =>{
 
     return(
 
         <div className='App-inicio'>
-            <NavbarOpen/>
+            <Navbar role = { role } />
             <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-10 col-lg-12 col-md-9">
@@ -16,7 +16,7 @@ const News = () =>{
                                         <div class="col-lg-1"></div>
                                         <div class="col-lg-10">
                                             <div class="p-5">
-                                            <h1>MUY PRONTO TE SORPRENDEREMOS CON GRANDES NOTICIAS</h1>
+                                            <h1>Feliz Navidad y Prospero Año 2022</h1>
                                             </div>
                                         </div>
                                     </div>

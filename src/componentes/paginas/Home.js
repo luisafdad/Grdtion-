@@ -1,15 +1,16 @@
 import React from "react";
 import HomeForm from "../forms/HomeForm";
-import NavbarOpen from "../navegacion/NavbarOpen";
+import Navbar from "../navegacion/Navbar";
 
 
 
-const Home = () =>{
-
+const Home = ({ token }) =>{
+    console.log('token',token);
+    console.log(token  ? token.role : '');
     return(
        <div>
         
-           <NavbarOpen/>
+           <Navbar role = { token ? token.role : '' } />
            <HomeForm/>
            
         </div>
