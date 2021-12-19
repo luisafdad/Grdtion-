@@ -2,15 +2,18 @@ import NavbarExtUser from "../navegacion/NavbarExtUser";
 import { useState, useEffect } from "react";
 import PrediosTable from "../tables/PrediosTable"
 
-const Dashboard = () => {
+const Dashboard = (props) => {
 
-    const [ prediosApi, setPrediosApi] = useState([]);
+    // const [ prediosApi, setPrediosApi] = useState([]);
+    const onDelete = props.onDelete;
+    const onUpdate = props.onUpdate;
+    const predios = props.predios;
 
-    useEffect(() => {
-        fetch('http://localhost:3004/predios')
-        .then(response => response.json())
-        .then(data => setPrediosApi(data));
-    }, []);
+    // useEffect(() => {
+    //     fetch('http://localhost:3001/predios')
+    //     .then(response => response.json())
+    //     .then(data => setPrediosApi(data));
+    // }, []);
 
 
     return (
@@ -28,7 +31,7 @@ const Dashboard = () => {
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <PrediosTable predios={prediosApi} />
+                                <PrediosTable onUpdate={onUpdate} onDelete={onDelete} predios={predios} />
                             </div>
                          </div>
                            

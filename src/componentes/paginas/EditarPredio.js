@@ -1,8 +1,8 @@
-import Navbar_InterUser from "../navegacion/Navbar_InterUser";
-import CrearPredForm from "../forms/CrearPredForm";
+import NavbarOpen from "../navegacion/NavbarOpen";
+import EditarPredial from "../forms/EditarPredial";
 
-const CrearPredio = ({onAdd}) => {
-
+const EditarPredio = (props) => {
+    const onUpdate = props.onUpdate;
     return (
         <>
             <NavbarOpen />
@@ -16,7 +16,7 @@ const CrearPredio = ({onAdd}) => {
                                         <div className="col-lg-3"></div>
                                         <div className="col-lg-6">
                                             <div className="p-5">
-                                                <CrearPredForm onAdd={onAdd}/>
+                                                <EditarPredial onUpdate={onUpdate} />
                                             </div>
                                         </div>
                                     </div>
@@ -30,4 +30,4 @@ const CrearPredio = ({onAdd}) => {
     );
 }
 
-export default CrearPredio;
+export default EditarPredio;
