@@ -1,8 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+
+async function loginUser(credentials) {
+    return fetch('http://localhost:3001/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(credentials)
+    })
+      .then(data => data.json())
+   }
 
 
-const LoginForm = () => {
-
+const LoginForm = ({ setToken }) => {
+    
     const loginFormClean = {
         email: "",
         password: ""
@@ -17,11 +29,14 @@ const LoginForm = () => {
         setLoginForm(p);
     }
 
-    const onFormSubmit = function (evt) {
+    const onFormSubmit = async (evt)=> {
         evt.preventDefault();
+        const token = await loginUser(loginForm);
+          setToken(token);
 
         //Aqui podemos implementar validaciones a nivel de formulario.
         console.log(loginForm);
+
     }
 
     const [loginForm, setLoginForm] = useState(loginFormClean);
@@ -70,3 +85,6 @@ const LoginForm = () => {
 }
 
 export default LoginForm;
+LoginForm.propTypes = {
+    setToken: PropTypes.func.isRequired
+  }
