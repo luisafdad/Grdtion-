@@ -21,21 +21,12 @@ const NavbarExtUser = () => {
                                 <Link className="nav-link " to='/'>Home</Link>
                             </li>
                             <li className="nav-item ">
-                                {/*<!-- <Link className="nav-link active" to='/'>Inicio</Link> -->*/}
-                                <Link className="nav-link " to='/cobropredios'>Cobro Predios</Link>
+                                {/*<!-- Pago Predial -->*/}
+                                <Link className="nav-link " to='/pagopredial'>Pagos</Link>
                             </li>
                             <li className="nav-item ">
-                                {/*<!-- <Link className="nav-link active" to='/'>Inicio</Link> -->*/}
-                                <Link className="nav-link " to='/solicitudconveniopago'>Solicitud Convenio Pago</Link>
-                            </li>
-                            <li className="nav-item ">
-                                <Link className="nav-link " to='/noticias'>Noticias</Link>
-                            </li>
-                            <li className="nav-item ">
-                                <Link className="nav-link " to='/pagopredial'>Pago Predial</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to='/convenios'>Convenios</Link>
+                                {/*<!-- Solicitud convenio -->*/}
+                                <Link className="nav-link " to='/solicitudconveniopago'>Convenios</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to='/dashboard'>Dashboard</Link>

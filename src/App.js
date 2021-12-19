@@ -22,20 +22,25 @@ function App() {
 
   return (
     <div className="App">
+      
       <Router>
         <Routes>
           <Route path= '/' exact element={<Home/>} />
           <Route path= "/login" element={ <Login /> } />
           <Route path= "/registro" element={ <Register/> } />
           <Route path= "/noticias" element={ <News/> } />
-          <Route path= "/dashboard" element={ <Dashboard /> } />
-          <Route path= "/predios" element={ <PredialConsul /> } />
-          <Route path= "/pagopredial" element={ <PagoPredial /> } />
+
+          {/*<!-- Usuario Interno -->*/}
           <Route path= "/crearpredio" element={ <CrearPredio/> } />
+          <Route path= "/cobropredios" element={ <CobroDePredial /> } />
           <Route path= "/aprorepro" element={ <AproRepro /> } />
           <Route path= "/generarmulta" element={ <GenerarMulta /> } />
-          <Route path= "/cobropredios" element={ <CobroDePredial /> } />
+          <Route path= "/predios" element={ <PredialConsul /> } />
+
+          {/*<!-- Usuario Externo -->*/}
+          <Route path= "/pagopredial" element={ <PagoPredial /> } />
           <Route path= "/solicitudconveniopago" element={ <SolicitudConvenioPago /> } />
+          <Route path= "/dashboard" element={ <Dashboard /> } />
         </Routes>
       </Router>
 

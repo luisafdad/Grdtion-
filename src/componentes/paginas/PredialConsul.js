@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarExtUser from "../navegacion/NavbarExtUser";
+import Navbar_InterUser from "../navegacion/Navbar_InterUser";
 
 import { useState, useEffect } from "react";
 import PrediosTable from "../tables/PrediosTable"
@@ -16,8 +16,8 @@ const PredialConsul = () => {
 
 
     return (
-        <div>
-            <NavbarExtUser />
+        <div >
+            <Navbar_InterUser />
             <section className="page-section bg-white">
                 <div className="container">
 

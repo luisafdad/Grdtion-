@@ -1,11 +1,11 @@
-import NavbarExtUser from "../navegacion/NavbarExtUser";
+import Navbar_InterUser from "../navegacion/Navbar_InterUser";
 import CobrodePredialForm from "../forms/CobrodePredialForm";
 
 const CobroDePredial = () => {
     return (
         <>
-        <NavbarExtUser />
-        <section class="page-section bg-white">
+        <Navbar_InterUser />
+        <section class="page-section App-inicio">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-10 col-lg-12 col-md-9">
