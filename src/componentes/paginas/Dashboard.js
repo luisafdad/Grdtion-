@@ -1,4 +1,4 @@
-import NavbarOpen from "../navegacion/NavbarOpen";
+import NavbarExtUser from "../navegacion/NavbarExtUser";
 import { useState, useEffect } from "react";
 import PrediosTable from "../tables/PrediosTable"
 
@@ -15,7 +15,7 @@ const Dashboard = () => {
 
     return (
         <>
-            <NavbarOpen />
+            <NavbarExtUser />
             <section class="page-section bg-white">
                 <div class="container">
 
