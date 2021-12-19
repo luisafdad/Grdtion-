@@ -8,8 +8,9 @@ const Login = ({ setToken }) => {
 
     return (
         <>
+ 
             <NavbarOpen />
-            <section class="page-section bg-white">
+            <section class="page-section App-inicio ">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-10 col-lg-12 col-md-9">

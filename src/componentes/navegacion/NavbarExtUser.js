@@ -16,17 +16,22 @@ const NavbarExtUser = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav mx-auto">
-                            <li className="nav-item ">
+                        <li className="nav-item ">
                                 {/*<!-- <Link className="nav-link active" to='/'>Inicio</Link> -->*/}
-                                <Link className="nav-link " to='/predios'>Predios</Link>
+                                <Link className="nav-link " to='/'>Home</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link className="nav-link " to='/pagopredial'>Pago Predial</Link>
+                                {/*<!-- Pago Predial -->*/}
+                                <Link className="nav-link " to='/pagopredial'>Pagos</Link>
+                            </li>
+                            <li className="nav-item ">
+                                {/*<!-- Solicitud convenio -->*/}
+                                <Link className="nav-link " to='/solicitudconveniopago'>Convenios</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to='/convenios'>Convenios</Link>
+                                <Link className="nav-link" to='/dashboard'>Dashboard</Link>
                             </li>
-                                                        <li className="nav-item">
+                            <li className="nav-item">
                                 <a className="nav-link disabled">Contacto </a>
                             </li>
                         </ul>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const RegisterForm = () => {
 
     return(
-        <div>
+        <>
             <div className="text-center">
                 <h1 className="h4 text-gray-900 mb-4">Registrate!</h1>
             </div>
@@ -64,7 +64,7 @@ const RegisterForm = () => {
             </div>
 
 
-        </div>
+        </>
 
     );
 

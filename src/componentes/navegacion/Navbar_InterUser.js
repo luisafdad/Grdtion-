@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const NavbarOpen = () => {
+const Navbar_InterUser = () => {
     return (
         
-        <div >
+        <div>
             {/*<!-- Creo Barra de Navegacion de Inicio -->*/}
             <nav className="navbar navbar-expand-lg navbar-light bg-light "> 
                 <div className="container-fluid">
@@ -21,25 +21,31 @@ const NavbarOpen = () => {
                                 <Link className="nav-link " to='/'>Home</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link className="nav-link " to='/noticias'>Noticias</Link>
+                                {/*<!-- <Link className="nav-link active" to='/'>Inicio</Link> -->*/}
+                                <Link className="nav-link " to='/crearpredio'>Crear_Predios</Link>
                             </li>
-                                                        <li className="nav-item">
-                                <Link className="nav-link" to='/crearpredio'>Int-Crear_Predios</Link>
+                            <li className="nav-item ">
+                                {/*<!-- <Link className="nav-link active" to='/'>Inicio</Link> -->*/}
+                                <Link className="nav-link " to='/cobropredios'>Cobros</Link>
                             </li>
-                                                        <li className="nav-item">
-                                <Link className="nav-link" to='/pagopredial'>Ext-Pago</Link>
+                            <li className="nav-item ">
+                                {/*<!-- Aprobar o reprobar convenios -->*/}
+                                <Link className="nav-link " to='/aprorepro'>Aprobar-Convenios</Link>
                             </li>
-                                                        <li className="nav-item">
+                            <li className="nav-item ">
+                                <Link className="nav-link " to='/generarmulta'>Multas</Link>
+                            </li>
+                            <li className="nav-item ">
+                                <Link className="nav-link " to='/predios'>Predios</Link>
+                            </li>
+                            <li className="nav-item">
                                 <a className="nav-link disabled">Contacto </a>
                             </li>
                         </ul>
                         <ul className=" nav justify-content-center">
-                            <li className="nav-item">
-                                <Link className="nav-link" to='/registro'>Registrate</Link>
-                            </li>
-
+                            
                             <li className="nav-item  nav-pills">
-                                <Link className="nav-link active" to='/login'>Login</Link>
+                                <Link className="nav-link active" to='/login'>LogOut</Link>
                             </li>  
                         </ul>                   
                     </div>
@@ -51,4 +57,4 @@ const NavbarOpen = () => {
     );
 };
 
-export default NavbarOpen;
+export default Navbar_InterUser;

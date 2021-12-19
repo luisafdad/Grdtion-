@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const PrediosTable = (predios) => {
-
+const PrediosTable = (props) => {
     // pendiente validar que data sea una lista
-    
-        const listPredios = () => predios.predios.map(
+    const predios = props.predios;
+    const onDelete = props.onDelete;
+
+        const listPredios = () => predios.map(
             (predio) => (
                 <tr>
                     <td>{predio.codigo}</td>
@@ -14,25 +16,20 @@ const PrediosTable = (predios) => {
                     <td>{predio.aconstruida}</td>
                     <td>{predio.direccion}</td>
                     <td>{predio.barrio}</td>
-                    <td>Acciones</td>
+                    <td>
+                        <button codigo={predio.codigo} onClick={onDelete}>Borrar</button>
+                    </td>
+                    <td>
+                        <Link style={{textDecoration:"none",color: "black",border:"1px solid black",padding: "5px"}} predio={predio} to={"/EditarPredio/" + predio.codigo}>Editar</Link>
+                    </td>
                 </tr>
             ));
-  
-    /*
-    console.log(predios.predios);
-    const listPredios = () => (
-            <tr>
-                <td>prueba</td>
-            </tr>
-
-    );*/
-
     return (
         <table
             className="table table-bordered"
             id="dataTable"
             width="100%"
-            cellspacing="0"
+            cellSpacing="0"
         >
             <thead>
                 <tr>
@@ -48,7 +45,6 @@ const PrediosTable = (predios) => {
             </thead>
             <tbody>
                 {listPredios()}
-
             </tbody>
         </table>
     )
