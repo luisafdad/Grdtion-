@@ -7,7 +7,7 @@ import '../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
 const HomeForm = () =>{
 
     return (
-        <div>
+        <>
 
             <div id="demo" className="carousel slide " data-bs-ride="carousel">
 
@@ -50,7 +50,7 @@ const HomeForm = () =>{
                 </button>
             </div>
 
-        </div>
+        </>
 
 
     );

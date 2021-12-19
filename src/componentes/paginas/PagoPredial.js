@@ -1,4 +1,4 @@
-import NavbarOpen from "../navegacion/NavbarExtUser";
+import NavbarExtUser from "../navegacion/NavbarExtUser";
 import PagoPredialForm from "../forms/PagoPredialForm";
 
 
@@ -6,8 +6,8 @@ const PagoPredial = () => {
 
     return (
         <>
-            <NavbarOpen />
-            <section class="page-section bg-white">
+            <NavbarExtUser />
+            <section class="page-section App-inicio">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-10 col-lg-12 col-md-9">

@@ -18,8 +18,6 @@ import EditarPredio from "./componentes/paginas/EditarPredio";
 
 import PrediosTable from './componentes/tables/PrediosTable';
 
-
-
 const App = () => {
   const [predios, setPredios] = useState([]);
 

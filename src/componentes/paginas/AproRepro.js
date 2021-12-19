@@ -1,4 +1,4 @@
-import NavbarOpen from "../navegacion/NavbarOpen";
+import Navbar_InterUser from "../navegacion/Navbar_InterUser";
 import AproReproForm from "../forms/AproReproForm";
 
 
@@ -6,8 +6,8 @@ const AproRepro = () => {
 
     return (
         <>
-            <NavbarOpen />
-            <section class="page-section bg-white">
+            <Navbar_InterUser />
+            <section class="page-section App-inicio">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-10 col-lg-12 col-md-9">

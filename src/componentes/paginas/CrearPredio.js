@@ -1,4 +1,4 @@
-import NavbarOpen from "../navegacion/NavbarOpen";
+import Navbar_InterUser from "../navegacion/Navbar_InterUser";
 import CrearPredForm from "../forms/CrearPredForm";
 
 const CrearPredio = ({onAdd}) => {
