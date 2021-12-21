@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const LoginSection = ({ role }) => {
     console.log("LoginSection", role);
-    if (role !== '') {
+    if (role !== undefined && role !== '') {
         return (
             <div style={({ marginLeft: 'auto'})}>
             <ul className=" nav justify-content-center">

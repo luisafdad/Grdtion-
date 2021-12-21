@@ -1,9 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LoginSection from "./LoginSection";
+import SectionInternalUsers from "./SectionInternalUsers";
 import SectionExternalUsers from "./SectionsExternalUsers";
 
+function showSectionsByRole (role) {
+    console.log("showSectionsByRole", role);
+    if (role === 'externo') {
+        return <SectionExternalUsers />;
+    }
+
+    if (role === 'interno' || role === 'administrador') {
+        return <SectionInternalUsers role={role} />;
+    }
+}
+
 const Navbar = ({ role }) => {
+
     return (
 
         <div >
@@ -18,7 +31,7 @@ const Navbar = ({ role }) => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav mx-auto">
-                            <SectionExternalUsers />
+                            { showSectionsByRole(role) }
                         </ul>
                         <LoginSection role={role} />
 
