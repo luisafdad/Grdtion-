@@ -17,7 +17,7 @@ const SectionInternalUsers = ( { role } ) => {
         }
     ];
 
-    if (role === 'Administrator') {
+    if (role === 'administrador') {
         listSections.push({
             path: "/usuarios",
             label: "Usuarios",

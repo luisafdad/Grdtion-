@@ -39,7 +39,7 @@ const LoginForm = ({ setToken }) => {
             console.log("no se logueo");
             return (<></>);
         }
-
+        console.log(response);
         setToken(response);
         window.location.href = '/';
     }
