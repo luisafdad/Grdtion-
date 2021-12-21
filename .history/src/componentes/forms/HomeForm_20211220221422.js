@@ -27,14 +27,14 @@ const HomeForm = () =>{
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="./relieveRisaralda1920x640.jpg" alt="Risaralda1" className="mx-auto d-block App-inicio1" />
+                        <img src="./relieveRisaralda.jpg" alt="Risaralda1" className="mx-auto d-block App-inicio1" />
                         <div className="carousel-caption">
                             <h3>Risaralda 2</h3>
                             <p>Gracias Risaralda!</p>
                         </div> 
                     </div>
                     <div className="carousel-item">
-                        <img src="./termales1920X640.jpg" alt="New York" className="mx-auto d-block App-inicio1" />
+                        <img src="./termales.jpg" alt="New York" className="mx-auto d-block App-inicio1" />
                         <div className="carousel-caption">
                             <h3>Risaralda 3</h3>
                             <p>Que grande eres!</p>
