@@ -104,7 +104,7 @@ const App = () => {
       });
   };
 
-  
+  fetchData();
   console.log(predios);
 //import NavbarOpen from './componentes/NavbarOpen';
 
