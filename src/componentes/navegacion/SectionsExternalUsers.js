@@ -6,6 +6,21 @@ const SectionExternalUsers = ( ) => {
 
     const listSections = [
         {
+            path: "/predios",
+            label: "Mis Predios",
+            estilo: ""
+        },
+        {
+            path: "/solicitudconveniopago",
+            label: "Solicitar Convenio",
+            estilo: ""
+        },
+        {
+            path: "/pagopredial",
+            label: "Realizar Pago",
+            estilo: ""
+        },
+        {
             path: "/noticias",
             label: "Noticias",
             estilo: ""
